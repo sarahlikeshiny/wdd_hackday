@@ -17,6 +17,10 @@ class App extends Component {
     value: this.value,
   };
 
+  handleChange = (event, value) => {
+    this.setState({ value });
+  };
+
   render() {
     const { classes } = this.props;
     const { value } = this.state;
@@ -57,32 +61,15 @@ class App extends Component {
       case 10:
         document.querySelector('.emoji-wrapper').childNodes[0].className = 'emoji-10';
         break;
-      default: 
+      default:
     }
 
     return (
       <div className="App">
         <div>
-          <Slider
-            classes={{ container: classes.slider }}
-            value={value}
-            aria-labelledby="label"
-            onChange={this.handleChange}
-            min={0}
-            max={6}
-            step={1}
-          />
-        </div>
-        <div>
-          <AlertDialog />
-          <Button variant="contained" color="primary">
-            Hello World
-          </Button>
-          <div className="emoji-wrapper">
-          <span class="emoji-5"></span>
+          <div className="emoji-wrapper"><span className=""></span></div>
           <div className="slider">
             <Slider
-              defaultValue={5}
               classes={{ container: classes.slider }}
               value={value}
               aria-labelledby="label"
@@ -91,10 +78,8 @@ class App extends Component {
               max={10}
               step={1}
             />
-          </div>     
-         
-         </div>
-
+          </div>
+          <AlertDialog />
         </div>
       </div >
     );
