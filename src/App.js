@@ -66,6 +66,9 @@ class App extends Component {
     return (
       <div className="App">
         <div>
+          <div className="logo">
+            <h1>EmojiFi</h1>
+          </div>
           <div className="App-header">
             <EntryDate />
           </div>
