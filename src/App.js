@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import { withStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
 import Slider from '@material-ui/lab/Slider'
+import AlertDialog from './Alert'
 
 const styles = {
   root: {
@@ -16,34 +16,32 @@ class App extends Component {
   state = {
     value: 50,
   };
-  handleChange = (event, value) => {
-    this.setState({ value });
-  };
+
   render() {
     const { classes } = this.props;
     const { value } = this.state;
 
     console.log(value);
 
+
+
     return (
       <div className="App">
         <div>
-          <Button variant="contained" color="primary">
-            Hello World
-         </Button>
-          <div>
-            <Slider
-              classes={{ container: classes.slider }}
-              value={value}
-              aria-labelledby="label"
-              onChange={this.handleChange}
-              min={0}
-              max={6}
-              step={1}
-            />
-          </div>
+          <Slider
+            classes={{ container: classes.slider }}
+            value={value}
+            aria-labelledby="label"
+            onChange={this.handleChange}
+            min={0}
+            max={6}
+            step={1}
+          />
         </div>
-      </div>
+        <div>
+          <AlertDialog />
+        </div>
+      </div >
     );
   }
 }
