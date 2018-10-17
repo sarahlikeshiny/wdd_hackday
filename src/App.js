@@ -14,7 +14,7 @@ const styles = {
 };
 class App extends Component {
   state = {
-    value: 11,
+    value: this.value,
   };
   handleChange = (event, value) => {
     this.setState({ value });
@@ -67,10 +67,12 @@ class App extends Component {
         <div>
           <Button variant="contained" color="primary">
             Hello World
-         </Button>
-         <div className="emoji-wrapper"><span class=""></span></div>
+          </Button>
+          <div className="emoji-wrapper">
+          <span class="emoji-5"></span>
           <div className="slider">
             <Slider
+              defaultValue={5}
               classes={{ container: classes.slider }}
               value={value}
               aria-labelledby="label"
@@ -79,7 +81,10 @@ class App extends Component {
               max={10}
               step={1}
             />
-          </div>
+          </div>     
+         
+         </div>
+
         </div>
       </div>
     );

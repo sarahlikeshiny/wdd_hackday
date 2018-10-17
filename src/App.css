@@ -27,15 +27,19 @@
   margin-top:50px;
 }
 .emoji-wrapper span {
-  width:20px;
-  height: 20px;
-  background-color:blue;
+  width:50px;
+  height: 50px;
   border-radius: 50%;
   margin: 0 auto;
   display: inline-block;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.emoji-0 ~ .emoji-wrapper {
+  background:blue;
 }
 .emoji-wrapper .emoji-0 { 
-  background-color: red;
+  background-image:url('assets/angry.png') ;
 }
 .emoji-wrapper .emoji-1 { 
   background-color: green;
