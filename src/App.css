@@ -22,54 +22,93 @@
   color: #61dafb;
 }
 
+.cta {
 
-.slider {
-  margin-top:50px;
 }
-.emoji-wrapper span {
-  width:50px;
-  height: 50px;
+
+.emoji-wrapper {
+  margin:50px;
+}
+.slider {
+  margin:50px 0 50px;
+}
+.emoji-wrapper > span {
+  width:150px;
+  height: 150px;
   border-radius: 50%;
   margin: 0 auto;
   display: inline-block;
   background-repeat: no-repeat;
   background-size: 100%;
 }
-.emoji-0 ~ .emoji-wrapper {
-  background:blue;
+.fake-background {
+  position:absolute;
+  top:0;
+  right:0;
+  left:0;
+  bottom:0;
+  z-index: -1;
+}
+
+.emoji-0 ~ .fake-background {
+  background: #af006a;
+}
+.emoji-1 ~ .fake-background {
+  background:#baffc9;
+}
+.emoji-2 ~ .fake-background {
+  background:#bae1ff;
+}
+.emoji-3 ~ .fake-background {
+  background:#7de6fa;
+}
+.emoji-4 ~ .fake-background {
+  background:#99aab5;
+}
+.emoji-5 ~ .fake-background {
+  background:#ffffff;
+}
+.emoji-6 ~ .fake-background {
+  background:#ffb3ba;
+}
+.emoji-7 ~ .fake-background {
+  background:rgb(218, 165, 240);
+}
+.emoji-8 ~ .fake-background {
+  background:#fff252;
+}
+.emoji-9 ~ .fake-background {
+  background:#bd5ffa;
 }
 .emoji-wrapper .emoji-0 { 
-  background-image:url('assets/angry.png') ;
+  background-image:url('assets/angry.png');
 }
 .emoji-wrapper .emoji-1 { 
-  background-color: green;
+  background-image:url('assets/disappointed.png');
 }
 .emoji-wrapper .emoji-2 { 
-  background-color: yellow;
+  background-image:url('assets/crying.png');
 }
 .emoji-wrapper .emoji-3 { 
-  background-color:red;
+  background-image:url('assets/shocked.png');
 }
 .emoji-wrapper .emoji-4 { 
-  background-color:green;
+  background-image:url('assets/sad.png');
 }
 .emoji-wrapper .emoji-5 { 
-  background-color: blue;
+  background-image:url('assets/null.png');
 }
 .emoji-wrapper .emoji-6 { 
-  background-color: violet;
+  background-image:url('assets/ok.png');
 }
 .emoji-wrapper .emoji-7 { 
-  background-color: purple;
+  background-image:url('assets/happy.png');
 }
 .emoji-wrapper .emoji-8 { 
-  background-color: orange;
+  background-image:url('assets/excited.png');
 }
 .emoji-wrapper .emoji-9 { 
-  background-color:violet;
-}
-.emoji-wrapper .emoji-10 { 
-  background-color: maroon;
+  background-image:url('assets/loved.png');
 }
 
 @keyframes App-logo-spin {

@@ -22,7 +22,7 @@ class AlertDialog extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="cta">
                 <Button onClick={this.handleClickOpen} variant="fab" color="primary" aria-label="Add" ><AddIcon />
                 </Button>
                 <Dialog
