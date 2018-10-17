@@ -1,17 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
-import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Slider from '@material-ui/lab/Slider'
 
-const styles = {
-  root: {
-    width: 300,
-  },
-  slider: {
-    padding: '22px 0px',
-  },
-};
+require('create-react-class');
 class App extends Component {
   state = {
     value: 10,
