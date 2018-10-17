@@ -17,11 +17,9 @@ class App extends Component {
   state = {
     value: this.value,
   };
-
   handleChange = (event, value) => {
     this.setState({ value });
   };
-
   render() {
     const { classes } = this.props;
     const { value } = this.state;
@@ -71,20 +69,21 @@ class App extends Component {
           <div className="App-header">
             <EntryDate />
           </div>
-          <div className="emoji-wrapper"><span className=""></span></div>
-          <div className="slider">
-            <Slider
-              classes={{ container: classes.slider }}
-              value={value}
-              aria-labelledby="label"
-              onChange={this.handleChange}
-              min={0}
-              max={10}
-              step={1}
-            />
-          </div>
-          <div className="align-left">
-            <AlertDialog />
+          <div className="emoji-wrapper">
+            <span className="emoji-5"></span>
+            <div className="fake-background"></div>
+            <div className="slider">
+              <Slider
+                classes={{ container: classes.slider }}
+                value={value}
+                aria-labelledby="label"
+                onChange={this.handleChange}
+                min={0}
+                max={9}
+                step={1}
+              />
+            </div>   
+            <AlertDialog />  
           </div>
         </div>
       </div >
