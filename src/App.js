@@ -1,28 +1,53 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { withStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
+import Slider from '@material-ui/lab/Slider'
 
+const styles = {
+  root: {
+    width: 300,
+  },
+  slider: {
+    padding: '22px 0px',
+  },
+};
 class App extends Component {
+  state = {
+    value: 10,
+  };
+  handleChange = (event, value) => {
+    this.setState({ value });
+  };
   render() {
+    const { classes } = this.props;
+    const { value } = this.state;
+    console.log(value);
+
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <div>
+          <Slider
+            classes={{ container: classes.slider }}
+            value={value}
+            aria-labelledby="label"
+            onChange={this.handleChange}
+            min={0}
+            max={6}
+            step={1}
+          />
+        </div>
+        <div>
+          <Button variant="contained" color="primary">
+            Hello World
+         </Button>
+        </div>
       </div>
     );
   }
 }
 
-export default App;
+
+
+
+export default withStyles(styles)(App);
