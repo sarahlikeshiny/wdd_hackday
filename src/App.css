@@ -22,6 +22,52 @@
   color: #61dafb;
 }
 
+
+.slider {
+  margin-top:50px;
+}
+.emoji-wrapper span {
+  width:20px;
+  height: 20px;
+  background-color:blue;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: inline-block;
+}
+.emoji-wrapper .emoji-0 { 
+  background-color: red;
+}
+.emoji-wrapper .emoji-1 { 
+  background-color: green;
+}
+.emoji-wrapper .emoji-2 { 
+  background-color: yellow;
+}
+.emoji-wrapper .emoji-3 { 
+  background-color:red;
+}
+.emoji-wrapper .emoji-4 { 
+  background-color:green;
+}
+.emoji-wrapper .emoji-5 { 
+  background-color: blue;
+}
+.emoji-wrapper .emoji-6 { 
+  background-color: violet;
+}
+.emoji-wrapper .emoji-7 { 
+  background-color: purple;
+}
+.emoji-wrapper .emoji-8 { 
+  background-color: orange;
+}
+.emoji-wrapper .emoji-9 { 
+  background-color:violet;
+}
+.emoji-wrapper .emoji-10 { 
+  background-color: maroon;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
