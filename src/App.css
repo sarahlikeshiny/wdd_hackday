@@ -22,12 +22,16 @@
   color: #61dafb;
 }
 
+.align-left {
+  margin-left: 75%;
+}
 
 .slider {
-  margin-top:50px;
+  margin-top: 50px;
 }
+
 .emoji-wrapper span {
-  width:50px;
+  width: 50px;
   height: 50px;
   border-radius: 50%;
   margin: 0 auto;
@@ -35,40 +39,52 @@
   background-repeat: no-repeat;
   background-size: 100%;
 }
+
 .emoji-0 ~ .emoji-wrapper {
-  background:blue;
+  background: blue;
 }
-.emoji-wrapper .emoji-0 { 
-  background-image:url('assets/angry.png') ;
+
+.emoji-wrapper .emoji-0 {
+  background-image: url('assets/angry.png');
 }
-.emoji-wrapper .emoji-1 { 
+
+.emoji-wrapper .emoji-1 {
   background-color: green;
 }
-.emoji-wrapper .emoji-2 { 
+
+.emoji-wrapper .emoji-2 {
   background-color: yellow;
 }
-.emoji-wrapper .emoji-3 { 
-  background-color:red;
+
+.emoji-wrapper .emoji-3 {
+  background-color: red;
 }
-.emoji-wrapper .emoji-4 { 
-  background-color:green;
+
+.emoji-wrapper .emoji-4 {
+  background-color: green;
 }
-.emoji-wrapper .emoji-5 { 
+
+.emoji-wrapper .emoji-5 {
   background-color: blue;
 }
-.emoji-wrapper .emoji-6 { 
+
+.emoji-wrapper .emoji-6 {
   background-color: violet;
 }
-.emoji-wrapper .emoji-7 { 
+
+.emoji-wrapper .emoji-7 {
   background-color: purple;
 }
-.emoji-wrapper .emoji-8 { 
+
+.emoji-wrapper .emoji-8 {
   background-color: orange;
 }
-.emoji-wrapper .emoji-9 { 
-  background-color:violet;
+
+.emoji-wrapper .emoji-9 {
+  background-color: violet;
 }
-.emoji-wrapper .emoji-10 { 
+
+.emoji-wrapper .emoji-10 {
   background-color: maroon;
 }
 

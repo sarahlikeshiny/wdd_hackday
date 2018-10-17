@@ -3,6 +3,7 @@ import './App.css';
 import { withStyles } from '@material-ui/core/styles';
 import Slider from '@material-ui/lab/Slider'
 import AlertDialog from './Alert'
+import EntryDate from './Date'
 
 const styles = {
   root: {
@@ -67,6 +68,9 @@ class App extends Component {
     return (
       <div className="App">
         <div>
+          <div className="header">
+            <EntryDate />
+          </div>
           <div className="emoji-wrapper"><span className=""></span></div>
           <div className="slider">
             <Slider
@@ -79,7 +83,9 @@ class App extends Component {
               step={1}
             />
           </div>
-          <AlertDialog />
+          <div className="align-left">
+            <AlertDialog />
+          </div>
         </div>
       </div >
     );
