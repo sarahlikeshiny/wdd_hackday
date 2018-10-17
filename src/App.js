@@ -16,9 +16,17 @@ class App extends Component {
   state = {
     value: this.value,
   };
+<<<<<<< HEAD
   handleChange = (event, value) => {
     this.setState({ value });
   };
+=======
+
+  handleChange = (event, value) => {
+    this.setState({ value });
+  };
+
+>>>>>>> 256cc7b03dcf8b8196e12b8aa0c9ebf6452bdbb6
   render() {
     const { classes } = this.props;
     const { value } = this.state;
@@ -59,7 +67,7 @@ class App extends Component {
       case 10:
         document.querySelector('.emoji-wrapper').childNodes[0].className = 'emoji-10';
         break;
-      default: 
+      default:
     }
 
     return (
