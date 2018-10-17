@@ -8,21 +8,32 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
   /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: 10px;
-  color: white;
+  color: grey;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-.cta {}
+.textarea-top {
+  border: #99aab5 1px solid;
+  border-radius: 5px;
+}
+
+textarea {
+  padding: 5px
+}
+
+.margin-top {
+  margin-top: 20px
+}
 
 .emoji-wrapper {
   margin: 50px;

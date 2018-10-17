@@ -82,9 +82,15 @@ class App extends Component {
                 max={9}
                 step={1}
               />
-            </div>   
-            <AlertDialog />  
+            </div>
+            <label className="textarea-top">
+              <textarea value={'what happened today?'} />
+            </label>
+            <div className="margin-top">
+              <AlertDialog />
+            </div>
           </div>
+
         </div>
       </div >
     );
