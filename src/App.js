@@ -3,6 +3,7 @@ import './App.css';
 import { withStyles } from '@material-ui/core/styles';
 import Slider from '@material-ui/lab/Slider'
 import AlertDialog from './Alert'
+import EntryDate from './Date'
 
 const styles = {
   root: {
@@ -16,17 +17,9 @@ class App extends Component {
   state = {
     value: this.value,
   };
-<<<<<<< HEAD
   handleChange = (event, value) => {
     this.setState({ value });
   };
-=======
-
-  handleChange = (event, value) => {
-    this.setState({ value });
-  };
-
->>>>>>> 256cc7b03dcf8b8196e12b8aa0c9ebf6452bdbb6
   render() {
     const { classes } = this.props;
     const { value } = this.state;
@@ -73,6 +66,9 @@ class App extends Component {
     return (
       <div className="App">
         <div>
+          <div className="App-header">
+            <EntryDate />
+          </div>
           <div className="emoji-wrapper">
             <span className="emoji-5"></span>
             <div className="fake-background"></div>

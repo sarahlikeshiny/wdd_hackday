@@ -9,12 +9,11 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: left;
+  justify-content: left;
+  font-size: calc(2px + 2vmin);
   color: white;
 }
 
@@ -22,14 +21,21 @@
   color: #61dafb;
 }
 
-.cta {
-
+.align-left {
+  margin-left: 75%;
 }
+
 
 .emoji-wrapper {
   margin:50px;
 }
 .slider {
+  margin-top: 50px;
+}
+
+.emoji-wrapper span {
+  width: 50px;
+  height: 50px;
   margin:50px 0 50px;
 }
 .emoji-wrapper > span {
@@ -41,6 +47,53 @@
   background-repeat: no-repeat;
   background-size: 100%;
 }
+
+.emoji-0 ~ .emoji-wrapper {
+  background: blue;
+}
+
+.emoji-wrapper .emoji-0 {
+  background-image: url('assets/angry.png');
+}
+
+.emoji-wrapper .emoji-1 {
+  background-color: green;
+}
+
+.emoji-wrapper .emoji-2 {
+  background-color: yellow;
+}
+
+.emoji-wrapper .emoji-3 {
+  background-color: red;
+}
+
+.emoji-wrapper .emoji-4 {
+  background-color: green;
+}
+
+.emoji-wrapper .emoji-5 {
+  background-color: blue;
+}
+
+.emoji-wrapper .emoji-6 {
+  background-color: violet;
+}
+
+.emoji-wrapper .emoji-7 {
+  background-color: purple;
+}
+
+.emoji-wrapper .emoji-8 {
+  background-color: orange;
+}
+
+.emoji-wrapper .emoji-9 {
+  background-color: violet;
+}
+
+.emoji-wrapper .emoji-10 {
+  background-color: maroon;
 .fake-background {
   position:absolute;
   top:0;
