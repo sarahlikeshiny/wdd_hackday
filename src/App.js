@@ -14,7 +14,7 @@ const styles = {
 };
 class App extends Component {
   state = {
-    value: 50,
+    value: 11,
   };
   handleChange = (event, value) => {
     this.setState({ value });
@@ -25,20 +25,58 @@ class App extends Component {
 
     console.log(value);
 
+    switch (value) {
+      case 0:
+        document.querySelector('.emoji-wrapper').childNodes[0].className = 'emoji-0';
+        break;
+      case 1:
+        document.querySelector('.emoji-wrapper').childNodes[0].className = 'emoji-1';
+        break;
+      case 2:
+        document.querySelector('.emoji-wrapper').childNodes[0].className = 'emoji-2';
+        break;
+      case 3:
+        document.querySelector('.emoji-wrapper').childNodes[0].className = 'emoji-3';
+        break;
+      case 4:
+        document.querySelector('.emoji-wrapper').childNodes[0].className = 'emoji-4';
+        break;
+      case 5:
+        document.querySelector('.emoji-wrapper').childNodes[0].className = 'emoji-5';
+        break;
+      case 6:
+        document.querySelector('.emoji-wrapper').childNodes[0].className = 'emoji-6';
+        break;
+      case 7:
+        document.querySelector('.emoji-wrapper').childNodes[0].className = 'emoji-7';
+        break;
+      case 8:
+        document.querySelector('.emoji-wrapper').childNodes[0].className = 'emoji-8';
+        break;
+      case 9:
+        document.querySelector('.emoji-wrapper').childNodes[0].className = 'emoji-9';
+        break;
+      case 10:
+        document.querySelector('.emoji-wrapper').childNodes[0].className = 'emoji-10';
+        break;
+      default: 
+    }
+
     return (
       <div className="App">
         <div>
           <Button variant="contained" color="primary">
             Hello World
          </Button>
-          <div>
+         <div className="emoji-wrapper"><span class=""></span></div>
+          <div className="slider">
             <Slider
               classes={{ container: classes.slider }}
               value={value}
               aria-labelledby="label"
               onChange={this.handleChange}
               min={0}
-              max={6}
+              max={10}
               step={1}
             />
           </div>
