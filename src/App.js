@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import { withStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
 import Slider from '@material-ui/lab/Slider'
+import AlertDialog from './Alert'
 
 const styles = {
   root: {
@@ -16,9 +16,7 @@ class App extends Component {
   state = {
     value: this.value,
   };
-  handleChange = (event, value) => {
-    this.setState({ value });
-  };
+
   render() {
     const { classes } = this.props;
     const { value } = this.state;
@@ -65,6 +63,18 @@ class App extends Component {
     return (
       <div className="App">
         <div>
+          <Slider
+            classes={{ container: classes.slider }}
+            value={value}
+            aria-labelledby="label"
+            onChange={this.handleChange}
+            min={0}
+            max={6}
+            step={1}
+          />
+        </div>
+        <div>
+          <AlertDialog />
           <Button variant="contained" color="primary">
             Hello World
           </Button>
@@ -86,7 +96,7 @@ class App extends Component {
          </div>
 
         </div>
-      </div>
+      </div >
     );
   }
 }
