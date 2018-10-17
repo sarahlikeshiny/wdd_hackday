@@ -68,7 +68,7 @@ class App extends Component {
     return (
       <div className="App">
         <div>
-          <div className="header">
+          <div className="App-header">
             <EntryDate />
           </div>
           <div className="emoji-wrapper"><span className=""></span></div>
